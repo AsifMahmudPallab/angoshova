@@ -649,16 +649,63 @@ header.header {
     height: 500px;
 }
 
-
-
-.active .slider-inner h2{
-     -webkit-animation-name: fadeInDown;
-             animation-name: fadeInDown;
+.slider-inner h2 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
 }
-/* .active .slider-inner h2{
+
+
+.slider-inner h2 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.single-slider {
+    position: relative;
+}
+
+.single-slider:before {
+    position: absolute;
+    height: 100%;
+    content: "";
+    top: 0;
+    background: rgba(0,0,0,.3);
+    width: 1400px;
+    transform: skew(-35deg) translateX(-300px);
+    opacity: 0;
+    transition: .3s all linear;
+}
+
+.active .single-slider:before {
+    transition-delay: .6s;
+    transform: skew(-35deg) translateX(-200px);
+    opacity: 1;
+}
+.slider-inner a,
+.slider-inner h2
+    {
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+    }
+   .active .slider-inner a,
+   .active .slider-inner h2   {
+        -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+   }
+   .active .slider-inner a  {
     -webkit-animation-delay: .2s;
             animation-delay: .2s;
-} */
+}
+
+
+.slider-inner {
+    position: relative;
+    z-index: 11;
+}
 /* about area */
 .section-title h3,
 .about-header h3 {
@@ -701,6 +748,37 @@ header.header {
 .single-news:hover {
     transform: translateY(-5px);
     box-shadow: 1px 5px 10px rgba(0,0,0,.2);
+}
+
+/* our gallary */
+.light-image i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    height: 35px;
+    width: 35px;
+    background: #ED1E27;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all ease;
+}
+.single-gallary-image:hover .light-image i{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+a.light-image {
+    position: static;
+}
+
+.single-gallary-image {
+    position: relative;
 }
 
 

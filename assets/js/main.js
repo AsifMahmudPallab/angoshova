@@ -11,11 +11,11 @@ $(document).ready(function(){
             nav:true,
             navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
             dots: false,
-            // animateOut: 'fadeOut',
-            // animateIn: 'fadeIn',
-            // autoplaySpeed:6000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            autoplaySpeed:4000,
             mouseDrag:true,
-            // autoplay: true,
+            autoplay: true,
             responsive:{
                 0:{
                     items:1
@@ -95,6 +95,11 @@ $(document).ready(function(){
         }
     })
 
+    
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
 
 
 
