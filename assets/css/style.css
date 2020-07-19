@@ -619,8 +619,14 @@ button:focus{
 .header-menu>ul>li.active > a{
     color: #ED1E27;
 }
+.header-menu>ul>li.active>a:after {
+    transform: translate(-50%) scale(1);
+}
 
-/* banner area */
+
+
+/* ====banner area ====
+====================================*/
 .single-slider {
     /* height: 80vh; */
     background-color: rgba(0, 0, 0, 0);
@@ -776,6 +782,30 @@ button:focus{
     margin-bottom: 20px;
     display: inline-block;
     color:#ee4750;
+}
+
+
+.single-counter {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-counter:after {
+    height: 40px;
+    width: 40px;
+    background: red;
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    border-radius: 40px 0px 40px 68px;
+    opacity: .1;
+    transition: .3s all ease;
+}
+
+.single-counter:hover:after {
+    opacity: .3;
+    transform: scale(2);
 }
 
 .single-counter h6 {
@@ -1126,7 +1156,7 @@ a.light-image {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: linear-gradient(130deg, #E84C3D 0%, #e84b3d9d 100%);
+    background: linear-gradient(130deg, red 0%, #E84C3D 100%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     -webkit-animation: pulse 1s linear infinite alternate;
     animation: pulse 1s linear infinite alternate;
