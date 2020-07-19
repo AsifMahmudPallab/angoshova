@@ -15,7 +15,7 @@ $(document).ready(function(){
             animateIn: 'fadeIn',
             autoplaySpeed:4000,
             mouseDrag:true,
-            autoplay: true,
+            // autoplay: true,
             responsive:{
                 0:{
                     items:1
