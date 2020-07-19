@@ -294,7 +294,12 @@ $(document).ready(function(){
         }
     }   
         
-
+/* prelodar */
+$(window).on('load',()=>{
+    setTimeout(()=>{
+        $('.preloder').addClass('pre-off');
+    },250)
+})
   
 
 })($)
