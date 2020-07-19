@@ -28,7 +28,7 @@
     <!--==== Responsive css file ====-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
+<body id='top'>
     
     <!-- start your template -->
 
@@ -100,7 +100,9 @@
                         <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5 col-7">
                             <!-- logo box -->
                             <div class="logo-box">
-                                <img src="assets/img/logo.png" alt="Header logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo.png" alt="Header logo">
+                                </a>
                             </div>
                             <!-- end of logo box -->
                         </div>
@@ -111,14 +113,13 @@
                                     <div class="header-menu">
                                         <div id="menu-button" class="d-md-none"><i class="fa fa-bars"></i></div>
                                         <ul>
-                                            <li><a href="#!">Home</a></li>
+                                            <li class="active"><a href="#!">Home</a></li>
                                             <li>
                                                 <a href="#!">About Us</a>
                                                 <ul>
-                                                    <li><a href="#!">Preface</a></li>
-                                                    <li><a href="#!">History</a></li>
-                                                    <li><a href="#!">Our chairman Massage</a></li>
-                                                    <li><a href="#!">CSR</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="md-speech.html">Our MD Speech</a></li>
+                                                    <li><a href="csr.html">CSR</a></li>
                                                     <li><a href="#!">Career</a></li>
                                                     <li class='indicator'></li>
                                                 </ul>
@@ -127,7 +128,7 @@
                                                 <a href="gallery.html">Gallary</a>
                                             </li>
                                             <li>
-                                                <a href="#!">Contact Us</a>
+                                                <a href="contact.html">Contact Us</a>
                                             </li>
                                             
                                         </ul>
@@ -147,7 +148,7 @@
     <!-- Start ......  -->
     <section class="banner-area">
         <div class="banner-carousel owl-carousel owl-theme">
-            <div class="single-slider" data-bg-img='assets/img/banner/banner1.png'>
+            <div class="single-slider" data-bg-img='assets/img/banner/banner1.jpg'>
                 <div class="container">
                     <div class="row  align-items-center">
                         <div class="col-md-7">
@@ -171,14 +172,37 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
+            <div class="single-slider" data-bg-img='assets/img/banner/banner3.jpg'>
+                <div class="container">
+                    <div class="row  align-items-center">
+                        <div class="col-md-7">
+                            <div class="slider-inner">
+                                <h2>Dress make you Stylish.</h2>
+                                <a href="#!" class="common-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider" data-bg-img='assets/img/banner/banner4.jpg'>
+                <div class="container">
+                    <div class="row  align-items-center">
+                        <div class="col-md-7">
+                            <div class="slider-inner">
+                                <h2>Dress make you Stylish.</h2>
+                                <a href="#!" class="common-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
     </section>
     <!-- End of the ........ -->
 
     <!-- start about area -->
-    <section class="about pt-80 pb-100">
+    <section class="about pt-80 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6" >
@@ -202,7 +226,7 @@
                 <div class="col-lg-5 offset-1" data-animate="fadeInUp" data-delay=".4">
                     <!-- about us image -->
                     <div class="about-us-image">
-                        <img src="assets/img/about.png" alt="">
+                        <img src="assets/img/about.jpg" alt="">
                     </div>
                     <!-- about us image -->
                 </div>
@@ -227,40 +251,45 @@
                 <div class="col-md-4">
                     <!-- single organization -->
                     <div class="single-org" data-animate="fadeInUp" data-delay=".3">
-                        <img src="" alt="">
+                        <img src="assets/img/cart.jpg" alt="">
                         <p>Angoshova Online Business / E-commerce.</p>
+                        <a href="#!" class="common-btn">Visite Our Shop</a>
                     </div>
                     <!-- End of single organization -->
                 </div>
                 <div class="col-md-4">
                     <!-- single organization -->
                     <div class="single-org" data-animate="fadeInUp" data-delay=".4">
-                        <img src="" alt="">
+                        <img src="assets/img/cart.jpg" alt="">
                         <p> M/S Firoz & Brother’s</p>
+                        <a href="https://www.facebook.com/Angoshova.Ltd/" class="common-btn">Visite Our Shop</a>
                     </div>
                     <!-- End of single organization -->
                 </div>
                 <div class="col-md-4">
                     <!-- single organization -->
                     <div class="single-org" data-animate="fadeInUp" data-delay=".5">
-                        <img src="" alt="">
+                       <img src="assets/img/print.jpg" alt="">
                         <p>Ad Doors Digital Printing & Press.</p>
+                        <a href="https://www.facebook.com/Angoshova.Ltd/" class="common-btn">Visite Our Shop</a>
                     </div>
                     <!-- End of single organization -->
                 </div>
                 <div class="col-md-4">
                     <!-- single organization -->
                     <div class="single-org" data-animate="fadeInUp" data-delay=".6">
-                        <img src="" alt="">
+                        <img src="assets/img/fab.jpg" alt="">
                         <p>Angoshova Tailor & Fabrics.</p>
+                        <a href="#!" class="common-btn">Visite Our Shop</a>
                     </div>
                     <!-- End of single organization -->
                 </div>
                 <div class="col-md-4">
                     <!-- single organization -->
                     <div class="single-org" data-animate="fadeInUp" data-delay=".7">
-                        <img src="" alt="">
+                        <img src="assets/img/agent.jpg" alt="">
                         <p>Islami Bank (Agent Bank).</p>
+                        <a href="#!" class="common-btn">Visite Our Bank</a>
                     </div>
                     <!-- End of single organization -->
                 </div>
@@ -337,64 +366,64 @@
             <div class="row">
                 <div class="col-md-3 col-sd-6">
                     <div class="single-gallary-image mb-30"  data-animate="fadeInUp" data-delay=".3">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
                     <div class="single-gallary-image  mb-30"  data-animate="fadeInUp" data-delay=".4">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                        <a class="light-image" href="assets/img/gallery/gallery2.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery3.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
                     <div class="single-gallary-image  mb-30"  data-animate="fadeInUp" data-delay=".5">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                        <a class="light-image" href="assets/img/gallery/gallery3.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery3.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
                     <div class="single-gallary-image  mb-30"  data-animate="fadeInUp" data-delay=".6">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
-                    <div class="single-gallary-image"  data-animate="fadeInUp" data-delay=".7">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                    <div class="single-gallary-image mb-30"  data-animate="fadeInUp" data-delay=".8">
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
-                    <div class="single-gallary-image"  data-animate="fadeInUp" data-delay=".8">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                    <div class="single-gallary-image mb-30"  data-animate="fadeInUp" data-delay=".9">
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
-                    <div class="single-gallary-image"  data-animate="fadeInUp" data-delay=".9">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                    <div class="single-gallary-image mb-30"  data-animate="fadeInUp" data-delay="1">
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sd-6">
-                    <div class="single-gallary-image"  data-animate="fadeInUp" data-delay="1">
-                        <a class="light-image" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1">
-                            <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" />
+                    <div class="single-gallary-image mb-30"  data-animate="fadeInUp" data-delay="1">
+                        <a class="light-image" href="assets/img/gallery/gallery1.jpg" data-lightbox="example-1">
+                            <img class="example-image" src="assets/img/gallery/gallery1.jpg" alt="image-1" />
                             <i class="fa fa-link"></i>
                         </a>
                     </div>
@@ -566,6 +595,10 @@
             
         </div>
     </section>
+
+    <!-- back to top -->
+    <a href="#top" class="backtop"><i class="fa fa-angle-double-up"></i></a>
+    <!-- End of back to top -->
 
 
     <!-- vendor js files -->
