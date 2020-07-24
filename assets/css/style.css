@@ -1247,3 +1247,160 @@ a.light-image {
     transition: .3s all ease;
 }
 .preloder.pre-off {transform: translateX(100%);visibility: hidden;opacity: 0;}
+
+
+/* offcanvas menu */
+.offcanvas-menu-wrapper {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background: #fff;
+    z-index: 10000;
+    padding: 15px;
+    transition: .3s all ease-in;
+    box-shadow: 4px 0px 30px #333333;
+}
+.offcanvas-menu-wrapper.show {
+    left: 0;
+}
+
+.offcanvas-menu ul ul {
+    padding-left: 20px;
+}
+
+.offcanvas-menu ul li a {
+    padding: 6px 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.offcanvas-menu ul li.active {
+    background: #E84C3D;
+}
+.offcanvas-menu ul li.active a{
+    color:#fff;
+}
+
+.offcanvas-menu ul li {
+    padding-left: 15px;
+}
+
+.offcanvas-cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,.4);
+}
+.offcanvas-log{
+    padding-top:50px;
+}
+.offcanvas-menu {
+    padding-top: 30px;
+}
+/* responsive full site
+========================================
+
+[Table of content]
+
+1. Large devices (less than 1200px)
+2. Large tablets (less than  992px)
+3. Medium devices (less than  768px)
+4. Small devices (less than  576px)
+5. Extra Small devices (less than  480px)
+
+============================================*/
+@media (max-width: 1199.98px) {
+    .single-counter h6 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 991.98px) {
+    
+    .about-content {
+        padding-bottom: 50px;
+    }
+    .md-image{
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .social-info .social-items {
+        justify-content: center;
+    }
+    .header-top-info {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .header-navigation {
+        padding: 18px 0;
+    }
+    .contact-image {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .header-navigation {
+        padding: 5px 0;
+    }
+    .title-name h2 {
+        font-size: 36px;
+    }
+    .contact-form .header, .contact-info-inner h3,
+    .csr h3, .speech h3, .our-history h3, .preface h3 {
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+    .section-title h3, .about-header h3{
+        font-size: 28px;
+    }
+    .slider-inner h2 {
+        font-size: 36px;
+    }
+   
+}
+
+@media (max-width: 480.98px) {
+    .social-info {
+        text-align: center;
+    }
+    .social-info .social-items {
+        display: inline-block;
+    }
+    .social-info .social-items li:last-child {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .header-navigation {
+        height: 80px;
+    }
+    .footer-content .social-info .social-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content .social-info .social-items li:last-child  {
+        display: inline-block;
+        width: initial;
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+}
+@media (max-width: 380.98px) {
+    .header-navigation {
+        height: 80px;
+        padding-top: 18px;
+    }
+}
