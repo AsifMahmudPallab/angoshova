@@ -565,20 +565,20 @@
                   
                     <!--Contact Form-->
                     <div class="contact-form">
-                        <form method="post" id="contact-form">
+                        <form method="post" action="contact.php" id="ajax-contact">
                             
                             <div class="row clearfix">
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <input type="text" name="username" value="" placeholder="Username" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                    <input type="text" name="name" value="" id="name" placeholder="Username" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <input type="email" name="email" value="" placeholder="Email">
+                                    <input type="email" name="email" id="email" value="" placeholder="Email">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <input type="text" name="subject" value="" placeholder="Subject">
+                                    <input type="text" name="subject" id="subject" value="" placeholder="Subject">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <textarea name="msg" id="msg" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group text-right">
                                     <button type="submit" name="submit" class="common-btn">Send</button>
@@ -655,6 +655,8 @@
 
         <!--==== owl tilt min js ====-->
         <script src="assets/plugins/tilt.jquery.js"></script>
+
+        <!-- <script src="./mail.ajax.js"></script> -->
 
         <!-- ====google map api key====-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2D8wrWMY3XZnuHO6C31uq90JiuaFzGws"></script>
